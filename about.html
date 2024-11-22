@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Sayyam Ehtesham - Mobile App Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            overflow-x: hidden;
+        }
+        .tech-logo {
+            position: absolute;
+            animation: float 15s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(50px, 50px) rotate(90deg); }
+            50% { transform: translate(100px, 0) rotate(180deg); }
+            75% { transform: translate(50px, -50px) rotate(270deg); }
+        }
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+        .skill-bar {
+            height: 10px;
+            background-color: #e2e8f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skill-progress {
+            height: 100%;
+            background-color: #3b82f6;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center">
+                <i class="fas fa-code mr-2"></i>Sayyam Ehtesham
+            </a>
+            <ul class="flex space-x-4">
+                <li><a href="/home.html" class="hover:text-blue-200 transition"><i class="fas fa-home mr-1"></i>Home</a></li>
+                <li><a href="/about.html" class="hover:text-blue-200 transition"><i class="fas fa-user mr-1"></i>About</a></li>
+                <li><a href="/contact.html" class="hover:text-blue-200 transition"><i class="fas fa-envelope mr-1"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-8 content">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600 animate__animated animate__fadeInDown">About Me</h1>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 animate__animated animate__fadeIn">
+            <div class="flex flex-col md:flex-row items-center mb-6">
+                <img src="profile.jpeg" alt="Sayyam Ehtesham" class="rounded-full w-32 h-32 md:w-48 md:h-48 object-cover mb-4 md:mb-0 md:mr-6 animate__animated animate__zoomIn">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Sayyam Ehtesham</h2>
+                    <p class="text-gray-600 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Alipur, Islamabad</p>
+                    <p class="text-gray-600 mb-4"><i class="fas fa-graduation-cap mr-2"></i>Mobile App Developer</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 transition transform hover:scale-110"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" target="_blank" class="text-gray-700 hover:text-gray-800 transition transform hover:scale-110"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Highly driven and proficient React Native app developer with 6 months of hands-on experience crafting cross-platform mobile solutions. Skilled in building performant and user-friendly applications with a keen eye for detail and a strong commitment to clean, modular code. Passionate about leveraging the latest tools and libraries in the React Native ecosystem to deliver seamless and innovative user experiences.
+
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 animate__animated animate__fadeInLeft">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <i class="fas fa-laptop-code text-blue-500 mr-2"></i>Skills
+                </h3>
+                <div class="space-y-4">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React Native</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 animate__animated animate__fadeInRight">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <i class="fas fa-university text-blue-500 mr-2"></i>Education
+                </h3>
+                <div class="mb-4">
+                    <h4 class="font-semibold">Bachelor's in Software Engineering</h4>
+                    <p class="text-gray-600">SZABIST, Islamabad</p>
+                    <p class="text-gray-600">2020 - 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 animate__animated animate__fadeInUp">
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fas fa-project-diagram text-blue-500 mr-2"></i>Projects
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border rounded p-4 project-card">
+                    <h4 class="font-semibold mb-2">RouteMate</h4>
+                    <p class="text-gray-700 mb-2">Final Year Project</p>
+                    <p class="text-gray-600">A ride-sharing application connecting passengers with drivers.</p>
+                </div>
+
+                <div class="border rounded p-4 project-card">
+                    <h4 class="font-semibold mb-2">PakWheels Clone</h4>
+                    <p class="text-gray-700 mb-2">Internship at CodilityHub Technologies</p>
+                    <p class="text-gray-600">Developed a responsive and user-friendly front-end clone of PakWheels, focusing on UI/UX design and API integration.</p>
+                </div>
+        
+                <!-- Welfare Pulse Project -->
+                <div class="border rounded p-4 project-card">
+                    <h4 class="font-semibold mb-2">Welfare Pulse - Donation App</h4>
+                    <p class="text-gray-700 mb-2">Internship at CodilityHub Technologies</p>
+                    <p class="text-gray-600">Created a donation app with separate interfaces for donors and admins. Designed and completed the UI/UX for all screens within one month, ensuring seamless user experience.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Sayyam Ehtesham. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

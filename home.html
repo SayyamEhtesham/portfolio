@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayyam Ehtesham - Mobile App Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        img {
+            height: 200px !important;
+            border-radius: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center">
+                <i class="fas fa-code mr-2"></i>
+                Sayyam Ehtesham
+            </a>
+            <ul class="flex space-x-4">
+                <li><a href="/home.html" class="hover:text-blue-200 transition flex items-center"><i class="fas fa-home mr-1"></i> Home</a></li>
+                <li><a href="/about.html" class="hover:text-blue-200 transition flex items-center"><i class="fas fa-user mr-1"></i> About</a></li>
+                <li><a href="/contact.html" class="hover:text-blue-200 transition flex items-center"><i class="fas fa-envelope mr-1"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <img src="/profile.jpeg" alt="Sayyam Ehtesham" data-aos="zoom-in">
+            <h1 class="text-4xl font-bold mb-2" data-aos="fade-up" data-aos-delay="200">Sayyam Ehtesham</h1>
+            <p class="text-xl mb-4" data-aos="fade-up" data-aos-delay="400">Mobile App Developer</p>
+            <a href="#contact" class="bg-white text-blue-500 px-6 py-2 rounded-full font-bold hover:bg-blue-100 transition inline-flex items-center" data-aos="fade-up" data-aos-delay="600">
+                <i class="fas fa-paper-plane mr-2"></i> Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12">
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">
+                <i class="fas fa-user-circle mr-2"></i> About Me
+            </h2>
+            <p class="text-lg text-justify max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Highly driven and proficient React Native app developer with 6 months of hands-on experience crafting cross-platform mobile solutions. Skilled in building performant and user-friendly applications with a keen eye for detail and a strong commitment to clean, modular code. Passionate about leveraging the latest tools and libraries in the React Native ecosystem to deliver seamless and innovative user experiences.
+            </p>
+        </section>
+
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">
+                <i class="fas fa-laptop-code mr-2"></i> Skills
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-center justify-center mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="flip-left">
+                    <h3 class="text-xl font-bold mb-2 flex items-center justify-center">
+                        <i class="fas fa-code mr-2 text-blue-500"></i> Technical Skills
+                    </h3>
+                    <ul class="list-disc list-inside text-left mx-auto">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>React Native</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="flip-left" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-2 flex items-center justify-center">
+                        <i class="fas fa-tools mr-2 text-blue-500"></i> Soft Skills
+                    </h3>
+                    <ul class="list-disc list-inside text-left mx-auto">
+                        <li>Team Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Project Management</li>
+                        <li>Effective Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">
+                <i class="fas fa-briefcase mr-2"></i> Experience
+            </h2>
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2 flex items-center">
+                    <i class="fas fa-project-diagram mr-2 text-blue-500"></i> Final Year Project: RouteMate
+                </h3>
+                <p class="text-gray-600 mb-2">2023-2024</p>
+                <ul class="list-disc list-inside text-justify">
+                    <li>Developed a ride-sharing application connecting passengers and drivers.</li>
+                    <li>Designed the app's user interface (UI) and user experience (UX) for intuitive navigation.</li>
+                    <li>Integrated RESTful APIs to enable real-time communication between passengers and drivers.</li>
+                    <li>Managed project documentation, including user manuals and deployment guides.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2 flex items-center">
+                    <i class="fas fa-project-diagram mr-2 text-blue-500"></i> Intern: CodilityHub Technologies
+                </h3>
+                <h6 class="font-bold mb-2">Pakwheels Clone</h6>
+                <ul class="list-disc list-inside text-justify">
+                    <li>Developed a front-end clone of PakWheels with a responsive and user-friendly design.</li>
+                    <li>Designed and implemented the application's UI/UX, focusing on an intuitive user experience.</li>
+                </ul>
+                <h6 class="font-bold mt-4">Welfare Pulse - Donation App</h6>
+                <ul class="list-disc list-inside text-justify mt-2">
+                    <li>Developed a donation app with two separate interfaces: one for donors and one for admins.</li>
+                    <li>Designed and created all app screens, ensuring an intuitive and visually appealing UI/UX.</li>
+                    <li>Completed the app's design and development within 1 month, adhering to project deadlines.</li>
+                    <li>Ensured seamless functionality between donor and admin features through effective UI design and workflow optimization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">
+                <i class="fas fa-graduation-cap mr-2"></i> Education
+            </h2>
+            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-2 flex items-center">
+                        <i class="fas fa-university mr-2 text-blue-500"></i> Bachelor's in Software Engineering
+                    </h3>
+                    <p class="text-gray-600">SZABIST H-8/4, Islamabad</p>
+                    <p>2020 - 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">
+                <i class="fas fa-envelope-open-text mr-2"></i> Contact Me
+            </h2>
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:sayyamsatti103@gmail.com" class="text-blue-500 hover:text-blue-600 transition" data-aos="zoom-in">
+                    <i class="fas fa-envelope text-4xl"></i>
+                </a>
+                <a href="tel:03377870135" class="text-blue-500 hover:text-blue-600 transition" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-phone text-4xl"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sayyam Ehtesham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
